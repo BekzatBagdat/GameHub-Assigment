@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamehub | Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Quicksand font link-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet">
+    <!--Font Awesome Icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="cart-body">
+    <header>
+        <!--Logo-->
+        <img class="logo" src="./images/GameHub_Logo.png" alt="logo" height="50">
+        <!--Hamburger menu-->
+        <input type="checkbox" id="hamMenu">
+        <label for="hamMenu" class="ham-menu">
+            <i class="fa fa-bars"></i>
+        </label>
+        <nav> 
+        <!--Search Bar-->
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Search store" name="q">
+            <button><img src="icons/search_symbol.svg" alt=""></button>
+        </form>
+        <!--Navigation Bar-->
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">
+                <img class="icons" src="icons/favorite_icon.svg" alt="favorite_icon">
+            </a>
+            <a href="cart.html">
+                <img  class="icons" src="icons/cart_icon.svg" alt="cart_icon">
+            </a>
+        </nav>
+    </header>
+    <main>
+    <div class="cart-sidebyside">
+        <section class="cart-products-section">
+
+            <h1>Products:</h1>
+
+            <div class="cart-wrapper">
+                <div class="cart-products">
+                    <img src="images/GameHub_covers3.jpg" alt="black">
+                    <h3>Black</h3>
+
+                    <div class="cart-select-remove">
+                    <select name="cart-num-products" id="numProducts">
+                        <option value="cart-num-products">1</option>
+                        <option value="cart-num-products">2</option>
+                        <option value="cart-num-products">3</option>
+                        <option value="cart-num-products">4</option>
+                        <option value="cart-num-products">5</option>
+                        <option value="cart-num-products">6</option>
+                        <option value="cart-num-products">7</option>
+                        <option value="cart-num-products">8</option>
+                        <option value="cart-num-products">9</option>
+                        <option value="cart-num-products">10</option>
+                    </select>
+                    <img src="icons/remove_btn.svg" alt="remove_btn">
+                    </div>
+                    <p>NOK 679</p>
+                </div>
+            </div>
+
+            <div class="cart-wrapper">
+                <div class="cart-products">
+                    <img src="images/GameHub_covers10.jpg" alt="black">
+                    <h3>Forge Legend</h3>
+
+                    <div class="cart-select-remove">
+                    <select name="cart-num-products" id="numProducts">
+                        <option value="cart-num-products">1</option>
+                        <option value="cart-num-products">2</option>
+                        <option value="cart-num-products">3</option>
+                        <option value="cart-num-products">4</option>
+                        <option value="cart-num-products">5</option>
+                        <option value="cart-num-products">6</option>
+                        <option value="cart-num-products">7</option>
+                        <option value="cart-num-products">8</option>
+                        <option value="cart-num-products">9</option>
+                        <option value="cart-num-products">10</option>
+                    </select>
+                    <img src="icons/remove_btn.svg" alt="remove_btn">
+                    </div>
+                    <p class="cart-discount-price">
+                        NOK 485 
+                        <span>
+                            <img src="icons/discount_tag.svg" alt="discount-tag">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="cart-total-section">
+
+            <h1>Total:</h1>
+
+            <div class="cart-total-div">
+                 <!--Black-->
+                <p class="cart-total-num">1x</p>
+                <p>Black</p>
+                <p>679,-</p>
+            </div>
+            <div class="cart-total-div">
+                 <!--Forge Legend-->
+                 <p class="cart-total-num">1x</p>
+                 <p>Forge Legend</p>
+                 <p>485,-</p>
+            </div>
+            <div class="cart-total-discount-div">
+                  <!--Discount-->
+                <h3>Forge Legend:</h3>
+                <p class="cart-total-discount-p">699,-</p>
+                <p>485,-</p>
+            </div>
+            <div class="cart-total-sum-div">
+                 <!--Total-->
+                 <p>1168,-</p>
+            </div>
+
+            <div class="cart-btn-div">
+                 <!--Checkout btn-->
+                 <a href="checkout.html">Check out</a>
+            </div>
+        </section>
+    </div>
+    </main>
+    <!--Footer with copyright and social media information-->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright-p">Copyright &#169; 2023 Gamehub</p>
+            <div class="socialmedia-icons">
+                <img src="icons/facebook_icon.svg" alt="facebook_icon">
+                <img src="icons/instagram_icon.svg" alt="instagram_icon">
+                <img src="icons/twitter_icon.svg" alt="twitter_icon">
+                <img src="icons/youtube_icon.svg" alt="youtube_icon">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
