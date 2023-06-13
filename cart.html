@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,22 +15,24 @@
     <!--Font Awesome Icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="cart-body">
     <header>
         <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="logo" height="50">
+        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
         <!--Hamburger menu-->
         <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu">
+        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
             <i class="fa fa-bars"></i>
         </label>
-        <nav> 
-        <!--Search Bar-->
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="Search store" name="q">
-            <button><img src="icons/search_symbol.svg" alt=""></button>
-        </form>
-        <!--Navigation Bar-->
+        <nav>
+            <!--Search Bar-->
+            <form action="#" class="search-bar">
+                <label id="searchStoreLabel" for="searchLabel">Search Store</label>
+                <input id="searchLabel" type="text" placeholder="Search store" name="q">
+                <button><img src="icons/search_symbol.svg" alt="search symbol/btn"></button>
+            </form>
+            <!--Navigation Bar-->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -37,23 +40,23 @@
                 <img class="icons" src="icons/favorite_icon.svg" alt="favorite_icon">
             </a>
             <a href="cart.html">
-                <img  class="icons" src="icons/cart_icon.svg" alt="cart_icon">
+                <img class="icons" src="icons/cart_icon.svg" alt="cart_icon">
             </a>
         </nav>
     </header>
     <main>
-    <div class="cart-sidebyside">
-        <section class="cart-products-section">
+        <div class="cart-sidebyside">
+            <section class="cart-products-section">
 
-            <h1>Products:</h1>
+                <h1>Products:</h1>
 
-            <div class="cart-wrapper">
-                <div class="cart-products">
-                    <img src="images/GameHub_covers3.jpg" alt="black">
-                    <h3>Black</h3>
+                <div class="cart-wrapper">
+                    <div class="cart-products">
+                        <img src="images/GameHub_covers3.jpg" alt="black">
+                        <h3>Black</h3>
 
-                    <div class="cart-select-remove">
-                    <select name="cart-num-products" id="numProducts">
+                        <div class="cart-select-remove">
+                            <select name="cart-num-products" id="numProducts">
                         <option value="cart-num-products">1</option>
                         <option value="cart-num-products">2</option>
                         <option value="cart-num-products">3</option>
@@ -65,19 +68,19 @@
                         <option value="cart-num-products">9</option>
                         <option value="cart-num-products">10</option>
                     </select>
-                    <img src="icons/remove_btn.svg" alt="remove_btn">
+                            <img src="icons/remove_btn.svg" alt="remove_btn">
+                        </div>
+                        <p>NOK 679</p>
                     </div>
-                    <p>NOK 679</p>
                 </div>
-            </div>
 
-            <div class="cart-wrapper">
-                <div class="cart-products">
-                    <img src="images/GameHub_covers10.jpg" alt="black">
-                    <h3>Forge Legend</h3>
+                <div class="cart-wrapper">
+                    <div class="cart-products">
+                        <img src="images/GameHub_covers10.jpg" alt="black">
+                        <h3>Forge Legend</h3>
 
-                    <div class="cart-select-remove">
-                    <select name="cart-num-products" id="numProducts">
+                        <div class="cart-select-remove">
+                            <select name="cart-num-products" id="numProducts">
                         <option value="cart-num-products">1</option>
                         <option value="cart-num-products">2</option>
                         <option value="cart-num-products">3</option>
@@ -89,50 +92,50 @@
                         <option value="cart-num-products">9</option>
                         <option value="cart-num-products">10</option>
                     </select>
-                    <img src="icons/remove_btn.svg" alt="remove_btn">
-                    </div>
-                    <p class="cart-discount-price">
-                        NOK 485 
-                        <span>
+                            <img src="icons/remove_btn.svg" alt="remove_btn">
+                        </div>
+                        <p class="cart-discount-price">
+                            NOK 485
+                            <span>
                             <img src="icons/discount_tag.svg" alt="discount-tag">
                         </span>
-                    </p>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="cart-total-section">
+            </section>
+            <section class="cart-total-section">
 
-            <h1>Total:</h1>
+                <h1>Total:</h1>
 
-            <div class="cart-total-div">
-                 <!--Black-->
-                <p class="cart-total-num">1x</p>
-                <p>Black</p>
-                <p>679,-</p>
-            </div>
-            <div class="cart-total-div">
-                 <!--Forge Legend-->
-                 <p class="cart-total-num">1x</p>
-                 <p>Forge Legend</p>
-                 <p>485,-</p>
-            </div>
-            <div class="cart-total-discount-div">
-                  <!--Discount-->
-                <h3>Forge Legend:</h3>
-                <p class="cart-total-discount-p">699,-</p>
-                <p>485,-</p>
-            </div>
-            <div class="cart-total-sum-div">
-                 <!--Total-->
-                 <p>1168,-</p>
-            </div>
+                <div class="cart-total-div">
+                    <!--Black-->
+                    <p class="cart-total-num">1x</p>
+                    <p>Black</p>
+                    <p>679,-</p>
+                </div>
+                <div class="cart-total-div">
+                    <!--Forge Legend-->
+                    <p class="cart-total-num">1x</p>
+                    <p>Forge Legend</p>
+                    <p>485,-</p>
+                </div>
+                <div class="cart-total-discount-div">
+                    <!--Discount-->
+                    <h3>Forge Legend:</h3>
+                    <p class="cart-total-discount-p">699,-</p>
+                    <p>485,-</p>
+                </div>
+                <div class="cart-total-sum-div">
+                    <!--Total-->
+                    <p>1168,-</p>
+                </div>
 
-            <div class="cart-btn-div">
-                 <!--Checkout btn-->
-                 <a href="checkout.html">Check out</a>
-            </div>
-        </section>
-    </div>
+                <div class="cart-btn-div">
+                    <!--Checkout btn-->
+                    <a href="checkout.html">Check out</a>
+                </div>
+            </section>
+        </div>
     </main>
     <!--Footer with copyright and social media information-->
     <footer>
@@ -147,4 +150,5 @@
         </div>
     </footer>
 </body>
+
 </html>

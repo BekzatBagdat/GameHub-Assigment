@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +11,28 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet">
     <!--Font Awesome Icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="contact-body">
     <header>
         <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="logo" height="50">
+        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
         <!--Hamburger menu-->
         <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu">
+        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
             <i class="fa fa-bars"></i>
         </label>
-        <nav> 
-        <!--Search Bar-->
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="Search store" name="q">
-            <button><img src="icons/search_symbol.svg" alt=""></button>
-        </form>
-        <!--Navigation Bar-->
+        <nav>
+            <!--Search Bar-->
+            <form action="#" class="search-bar">
+                <label id="searchStoreLabel" for="searchLabel">Search Store</label>
+                <input id="searchLabel" type="text" placeholder="Search store" name="q">
+                <button><img src="icons/search_symbol.svg" alt="search symbol/btn"></button>
+            </form>
+            <!--Navigation Bar-->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -37,7 +40,7 @@
                 <img class="icons" src="icons/favorite_icon.svg" alt="favorite_icon">
             </a>
             <a href="cart.html">
-                <img  class="icons" src="icons/cart_icon.svg" alt="cart_icon">
+                <img class="icons" src="icons/cart_icon.svg" alt="cart_icon">
             </a>
         </nav>
     </header>
@@ -51,61 +54,60 @@
         <!--Contact Section-->
         <section class="contact-section">
             <div class="contact-div">
-            <!--Heading-->
-            <div class="contact-info-div">
-                <h2>Contact Information</h2>
-                <p>
-                    Fill up the form, and we will get back to you within 24 hours.
-                </p>
+                <!--Heading-->
+                <div class="contact-info-div">
+                    <h2>Contact Information</h2>
+                    <p>
+                        Fill up the form, and we will get back to you within 24 hours.
+                    </p>
 
-                <!--Call, Mail, Map icon and info-->
-                <div class="contact-info">
-                    <p>
-                        <img src="icons/call_symbol.svg" alt="call_icon"> 
-                        +47 91 23 45 67
-                    </p>
-                    <p>
-                        <img src="icons/mail_symbol.svg" alt="mail_icon">+contact@gamehub.com
-                    </p>
-                    <p>
-                        <img src="icons/map_symbol.svg" alt="map_icon">Somegaten 12, 0010 Oslo
-                    </p>
+                    <!--Call, Mail, Map icon and info-->
+                    <div class="contact-info">
+                        <p>
+                            <img src="icons/call_symbol.svg" alt="call_icon"> +47 91 23 45 67
+                        </p>
+                        <p>
+                            <img src="icons/mail_symbol.svg" alt="mail_icon">+contact@gamehub.com
+                        </p>
+                        <p>
+                            <img src="icons/map_symbol.svg" alt="map_icon">Somegaten 12, 0010 Oslo
+                        </p>
+                    </div>
+
+                    <!--Social Media Icons-->
+                    <div class="contact-social-media">
+                        <img src="icons/facebook_icon.svg" alt="facebook_icon">
+                        <img src="icons/instagram_icon.svg" alt="instagram_icon">
+                        <img src="icons/twitter_icon.svg" alt="twitter_icon">
+                        <img src="icons/youtube_icon.svg" alt="youtube_icon">
+                    </div>
                 </div>
 
-                <!--Social Media Icons-->
-                <div class="contact-social-media">
-                    <img src="icons/facebook_icon.svg" alt="facebook_icon">
-                    <img src="icons/instagram_icon.svg" alt="instagram_icon">
-                    <img src="icons/twitter_icon.svg" alt="twitter_icon">
-                    <img src="icons/youtube_icon.svg" alt="youtube_icon">
+                <!--form-->
+                <div class="contact-form-div">
+                    <form action="#" method="get">
+
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="Last Name" id="lastname">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="tel" name="phonenumber" id="phonenumber">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="33" rows="5"></textarea>
+
+                        <!--Submit Btn-->
+                        <input type="submit" value="Send Message">
+                    </form>
                 </div>
             </div>
 
-            <!--form-->
-            <div class="contact-form-div">
-                <form action="#" method="get">
-
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname">
-
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="Last Name" id="lastname">
-
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="phonenumber">Phone Number</label>
-                    <input type="tel" name="phonenumber" id="phonenumber">
-
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="33" rows="5"></textarea>
-
-                    <!--Submit Btn-->
-                    <input type="submit" value="Send Message">
-                </form>
-            </div>
-        </div>
-            
         </section>
     </main>
 
@@ -122,4 +124,5 @@
         </div>
     </footer>
 </body>
+
 </html>

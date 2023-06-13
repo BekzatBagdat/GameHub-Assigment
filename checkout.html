@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,22 +15,24 @@
     <!--Font Awesome Icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="checkout-body">
     <header>
         <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="logo" height="50">
+        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
         <!--Hamburger menu-->
         <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu">
+        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
             <i class="fa fa-bars"></i>
         </label>
-        <nav> 
-        <!--Search Bar-->
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="Search store" name="q">
-            <button><img src="icons/search_symbol.svg" alt=""></button>
-        </form>
-        <!--Navigation Bar-->
+        <nav>
+            <!--Search Bar-->
+            <form action="#" class="search-bar">
+                <label id="searchStoreLabel" for="searchLabel">Search Store</label>
+                <input id="searchLabel" type="text" placeholder="Search store" name="q">
+                <button><img src="icons/search_symbol.svg" alt="search symbol/btn"></button>
+            </form>
+            <!--Navigation Bar-->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -37,7 +40,7 @@
                 <img class="icons" src="icons/favorite_icon.svg" alt="favorite_icon">
             </a>
             <a href="cart.html">
-                <img  class="icons" src="icons/cart_icon.svg" alt="cart_icon">
+                <img class="icons" src="icons/cart_icon.svg" alt="cart_icon">
             </a>
         </nav>
     </header>
@@ -45,7 +48,7 @@
         <section class="checkout-info-section">
 
             <h1>Checkout</h1>
-             <!--Billing information form-->
+            <!--Billing information form-->
             <div class="checkout-form-div">
                 <form action="#" method="get">
                     <label for="firstname">First Name</label>
@@ -71,7 +74,7 @@
 
                     <label for="address">Adress</label>
                     <input type="text" name="address" id="adress">
-                </form>   
+                </form>
                 <h2>Billing Information</h2>
                 <form action="#" method="get">
                     <label for="cardname">Cardholder Name</label>
@@ -90,8 +93,8 @@
                     <input type="text" name="cvc" id="cvc">
 
                     <div class="checkout-agree-div">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label for="agree">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">
                         I agree to terms and condititions and the privacy policy
                     </label>
                     </div>
@@ -115,4 +118,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,22 +15,24 @@
     <!--Font Awesome Icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="logo" height="50">
+        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
         <!--Hamburger menu-->
         <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu">
+        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
             <i class="fa fa-bars"></i>
         </label>
-        <nav> 
-        <!--Search Bar-->
-        <form action="#" class="search-bar">
-            <input type="text" placeholder="Search store" name="q">
-            <button><img src="icons/search_symbol.svg" alt=""></button>
-        </form>
-        <!--Navigation Bar-->
+        <nav>
+            <!--Search Bar-->
+            <form action="#" class="search-bar">
+                <label id="searchStoreLabel" for="searchLabel">Search Store</label>
+                <input id="searchLabel" type="text" placeholder="Search store" name="q">
+                <button><img src="icons/search_symbol.svg" alt="search symbol/btn"></button>
+            </form>
+            <!--Navigation Bar-->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
@@ -37,7 +40,7 @@
                 <img class="icons" src="icons/favorite_icon.svg" alt="favorite_icon">
             </a>
             <a href="cart.html">
-                <img  class="icons" src="icons/cart_icon.svg" alt="cart_icon">
+                <img class="icons" src="icons/cart_icon.svg" alt="cart_icon">
             </a>
         </nav>
     </header>
@@ -48,14 +51,7 @@
                 <h1>Forge Legend</h1>
                 <img src="images/GameHub_covers10.jpg" alt="Forge_Legend_Image">
                 <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. 
-                    Proin tristique eros a nisi 
-                    dignissim finibus. 
-                    Sed a euismod neque, 
-                    et euismod ante. 
-                    Aenean mattis metus metus, 
-                    eget vehicula ipsum ultrices. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique eros a nisi dignissim finibus. Sed a euismod neque, et euismod ante. Aenean mattis metus metus, eget vehicula ipsum ultrices.
                 </p>
                 <!--Game Page Price Box-->
                 <div class="gamepage-price-div">
@@ -75,7 +71,7 @@
             <!--Product Information-->
             <div class="gamepage-product-info-div">
                 <h2>Product Information</h2>
-                
+
                 <div>
                     <p>Developer:</p>
                     <p>Force Studio</p>
@@ -118,4 +114,5 @@
         </div>
     </footer>
 </body>
+
 </html>
