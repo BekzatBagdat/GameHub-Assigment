@@ -166,6 +166,27 @@ nav a:active {
     }
 }
 
+@media (max-width:374px) {
+    .search-bar {
+        display: none;
+    }
+    #hamMenu:checked~nav {
+        display: flex;
+        background-color: #FFFFFF;
+        height: 100vh;
+        align-items: center;
+        margin-top: 60px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:297px) {
+    .logo {
+        display: none;
+    }
+}
+
 
 /*----------------New Releases Section----------------*/
 
