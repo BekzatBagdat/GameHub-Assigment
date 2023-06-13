@@ -116,6 +116,10 @@ nav a:active {
     cursor: pointer;
 }
 
+#searchStoreLabel {
+    display: none;
+}
+
 .ham-menu {
     color: #1b203d;
     font-size: 3rem;
