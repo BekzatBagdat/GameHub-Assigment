@@ -348,6 +348,22 @@ nav a:active {
     }
 }
 
+@media (max-width: 330px) {
+    .newreleases-title {
+        transform: scale(0.7);
+    }
+    .newreleases-products {
+        transform: scale(0.7);
+    }
+    .newreleases-products:hover {
+        transform: scale(0.7);
+    }
+    .newreleases-listofgames {
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+}
+
 
 /*----------------Discounts and Top Selling Section----------------*/
 
