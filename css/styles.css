@@ -803,7 +803,7 @@ nav a:active {
     letter-spacing: 0.12rem;
 }
 
-.contact-heading-div p {
+.contact-heading-div h2 {
     color: #59595B;
     font-style: normal;
     font-weight: 500;
