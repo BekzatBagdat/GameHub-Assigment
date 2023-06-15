@@ -1021,15 +1021,28 @@ nav a:active {
     }
 }
 
-@media (max-width: 510px) {
-    .contact-section {
-        transform: scale(0.9);
+@media (max-width: 500px) {
+    .contact-info-div h2,
+    .contact-info-div p,
+    .contact-social-media,
+    .contact-form-div form {
+        transform: scale(0.8);
+    }
+    .contact-info-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-info-div p {
+        padding-left: 60px;
+        padding-right: 40px;
     }
 }
 
-@media (max-width: 450px) {
-    .contact-section {
-        transform: scale(0.7);
+@media (max-width: 500px) {
+    .contact-info-div p {
+        padding-left: 100px;
+        padding-right: 80px;
     }
 }
 
