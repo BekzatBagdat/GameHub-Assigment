@@ -722,82 +722,37 @@ nav a:active {
 }
 
 .about-section {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+}
+
+.about-section-title {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.about-section {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 3rem;
 }
 
-.about-img-span-one {
+.about-img {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    float: right;
     background-color: #FFFFFF;
     width: 400px;
-    height: 300px;
     border-radius: 64px;
-    background-image: url(../images/GameHub_Logo.png);
-    background-size: 350px;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
-.about-img-span-two {
+.about-img-two {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    float: right;
     width: 400px;
-    height: 300px;
     border-radius: 64px;
-    background-image: url(../images/About_gamer.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.about-text {
-    clear: both;
-    font-size: 1.5rem;
-}
-
-@media (max-width: 850px) {
-    .about-img-span-one {
-        transform: scale(0.9);
-    }
-    .about-img-span-two {
-        transform: scale(0.9);
-    }
-    .about-text {
-        clear: both;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .about-section {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 460px) {
-    .about-img-span-one {
-        transform: scale(0.7);
-    }
-    .about-img-span-two {
-        transform: scale(0.7);
-    }
-    .about-text {
-        clear: both;
-        font-size: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
 }
 
 
