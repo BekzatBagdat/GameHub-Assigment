@@ -1314,7 +1314,8 @@ nav a:active {
     .cart-total-div,
     .cart-total-discount-div,
     .cart-total-discount-div,
-    .cart-total-sum-div {
+    .cart-total-sum-div,
+    .cart-btn-div {
         transform: scale(0.7);
     }
 }
