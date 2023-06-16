@@ -1157,6 +1157,10 @@ nav a:active {
     cursor: pointer;
 }
 
+.cart-select-remove label {
+    display: none;
+}
+
 .cart-products h2 {
     padding-left: 10px;
     color: #1B203D;
