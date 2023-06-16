@@ -1319,8 +1319,27 @@ nav a:active {
     .cart-total-discount-div,
     .cart-total-discount-div,
     .cart-total-sum-div,
-    .cart-btn-div {
+    .cart-btn-div,
+    .cart-products-section h1,
+    .cart-products img,
+    .cart-products h2,
+    .cart-products p,
+    .cart-select-remove {
         transform: scale(0.7);
+    }
+    .cart-products {
+        width: 200px;
+        border-top: 4px solid #1B203D;
+        border-bottom: 4px solid #1B203D;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .cart-total-div {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
     }
 }
 
