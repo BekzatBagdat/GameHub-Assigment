@@ -73,7 +73,7 @@
                     <label for="province">Province/Territory</label>
                     <input type="text" name="province" id="province">
 
-                    <label for="address">Adress</label>
+                    <label for="address">Address</label>
                     <input type="text" name="address" id="address">
                 </form>
                 <h2>Billing Information</h2>
@@ -82,17 +82,18 @@
                     <input type="text" name="cardname" id="cardname">
 
                     <label for="cardnum">Card Number</label>
-                    <input type="text" name="cardnumber" id="cardnum">
+                    <input type="text" name="cardnumber" id="cardnum" maxlength="19">
 
-                    <label for="month">MM</label>
-                    <input type="text" name="month" id="month">
+                    <div class="checkout-MYC">
+                        <label for="month">MM</label>
+                        <input type="text" name="month" id="month" maxlength="5">
 
-                    <label for="year">YY</label>
-                    <input type="text" name="year" id="year">
+                        <label for="year">YY</label>
+                        <input type="text" name="year" id="year" maxlength="4">
 
-                    <label for="cvc">CVC</label>
-                    <input type="text" name="cvc" id="cvc">
-
+                        <label for="cvc">CVC</label>
+                        <input type="text" name="cvc" id="cvc" maxlength="3">
+                    </div>
                     <div class="checkout-agree-div">
                         <input type="checkbox" name="agree" id="agree">
                         <label for="agree">
@@ -100,8 +101,10 @@
                     </label>
                     </div>
                     <!--Submit Btn-->
-                    <a href="success.html">Place Order</a>
-                    <a href="cart.html">Back to cart</a>
+                    <div class="cart-btn-div checkout-btn-div">
+                        <a href="success.html">Place Order</a>
+                    </div>
+                    <a href="cart.html" class="checkout-cancel-btn">Cancel</a>
                 </form>
             </div>
         </section>
