@@ -1403,17 +1403,22 @@ nav a:active {
     text-align: center;
 }
 
-.checkout-MYC input {
-    width: 60px;
-    margin-right: 5px;
-    margin-top: 0px;
-    margin-bottom: 50px;
+.checkout-MYC {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-MYC input,
+.checkout-MYC label {
+    display: inline-block;
 }
 
 .checkout-MYC input {
+    margin-left: 5px;
+    margin-right: 5px;
     width: 60px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #year {
@@ -1424,20 +1429,27 @@ nav a:active {
     width: 45px;
 }
 
+.checkout-agree-div {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
 .checkout-agree-div input {
-    clear: both;
     border: 2px solid #ffffff;
     width: 15px;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-top: 0px;
     cursor: pointer;
 }
 
 .checkout-agree-div label {
     cursor: pointer;
-    margin-top: 5px;
-    float: right;
+    margin-top: 10px;
     margin-left: 5px;
+    padding-bottom: 10px;
 }
 
 .checkout-btn-div {
@@ -1453,6 +1465,42 @@ nav a:active {
     text-align: center;
     text-decoration: none;
     margin-bottom: 30px;
+}
+
+@media (max-width: 460px) {
+    .checkout-info-section h1,
+    .checkout-form-div input,
+    .checkout-form-div label,
+    .checkout-form-div h2,
+    .checkout-MYC input,
+    .checkout-MYC label,
+    #year,
+    #cvc,
+    .checkout-agree-div input,
+    .checkout-agree-div label,
+    .checkout-btn-div,
+    .checkout-cancel-btn {
+        transform: scale(0.8);
+    }
+    .checkout-agree-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .checkout-agree-div label {
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    .checkout-MYC {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 
