@@ -1504,6 +1504,85 @@ nav a:active {
 }
 
 
+/*----------------Success Page----------*/
+
+.success-body {
+    background-color: #1B203D;
+    color: #ffffff;
+}
+
+.success-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.success-section img {
+    margin-top: 100px;
+    height: 90px;
+    align-self: center;
+}
+
+.success-section h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    color: #4fda42;
+    margin-bottom: 60px;
+}
+
+.success-section p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.success-btn-div {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-btn-div a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 200%;
+    padding: 5px 10px;
+    border-radius: 28px;
+    background-color: #1b203d;
+    border: 4px solid #FFFFFF;
+    transition: 1s;
+}
+
+.success-btn-div a:hover {
+    color: #1B203D;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease 0s;
+}
+
+.success-btn-div a:active {
+    color: #FFFFFF;
+    background-color: #384799;
+}
+
+@media (max-width: 460px) {
+    .success-section img,
+    .success-section h1,
+    .success-section p,
+    .success-btn-div a {
+        transform: scale(0.7);
+    }
+}
+
+
 /*----------------Footer----------------*/
 
 
