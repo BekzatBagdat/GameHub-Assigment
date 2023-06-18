@@ -694,6 +694,13 @@ nav a:active {
     color: #1B203D;
 }
 
+.gamepage-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .gamepage-div {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -793,6 +800,119 @@ nav a:active {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+
+/*product info section*/
+
+.gamepage-product-info-div {
+    background-color: #1B203D;
+    color: #ffffff;
+    width: 1050px;
+    border-radius: 34px;
+    margin-bottom: 100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.037));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gamepage-product-info-div h2 {
+    margin-top: 40px;
+}
+
+.gamepage-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1060px) {
+    .gamepage-div {
+        flex-direction: column;
+    }
+    .gamepage-product-info-div {
+        width: 650px;
+    }
+}
+
+@media (max-width: 650px) {
+    .gamepage-div img {
+        align-self: center;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .gamepage-div h1 {
+        text-align: center;
+    }
+    .gamepage-text {
+        text-align: center;
+        width: 400px;
+        align-self: center;
+    }
+    .gamepage-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .gamepage-pri-btn {
+        flex-direction: column;
+    }
+    .gamepage-txt-pri-btn {
+        flex-direction: column;
+    }
+    .gamepage-pri-btn {
+        align-self: center;
+    }
+    .gamepage-pri-btn a {
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    .gamepage-price-div {
+        flex-direction: row;
+    }
+    .gamepage-price-div h2 {
+        margin-right: 25px;
+    }
+    /*product info section*/
+    .gamepage-product-info-div {
+        width: 400px;
+    }
+    .gamepage-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        border-bottom: 3px solid #ffffff;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 430px) {
+    .gamepage-section,
+    .gamepage-div img,
+    .gamepage-div h1,
+    .gamepage-div h2,
+    .gamepage-div p,
+    .gamepage-div a,
+    .gamepage-info {
+        transform: scale(0.7);
+    }
+    .gamepage-div {
+        margin-top: 0;
+    }
+    .gamepage-div img,
+    .gamepage-div p,
+    .gamepage h2 {
+        margin: 0;
+        margin-right: 0;
+    }
 }
 
 
