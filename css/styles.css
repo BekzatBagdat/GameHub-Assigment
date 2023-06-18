@@ -729,7 +729,7 @@ nav a:active {
     margin-bottom: 30px;
 }
 
-.gamepage-price-div p {
+.gamepage-price-div h2 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
