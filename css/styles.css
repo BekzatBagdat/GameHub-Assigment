@@ -686,6 +686,66 @@ nav a:active {
 }
 
 
+/*----------------Gamepage--------------*/
+
+.gamepage-body {
+    background-color: #fdfdfd;
+    transition: 0.3s all ease;
+    color: #1B203D;
+}
+
+.gamepage-div {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gamepage-div img {
+    width: 400px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.314));
+    border-radius: 34px;
+    margin-right: 25px;
+}
+
+.gamepage-div h1 {
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.037));
+}
+
+.gamepage-div p {
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.025rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.gamepage-price-div p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.01rem;
+    text-decoration: line-through #FF0000;
+    margin: 0;
+}
+
+.gamepage-txt-pri-btn {
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
 /*----------------About Page----------------*/
 
 .about-body {
