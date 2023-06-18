@@ -738,6 +738,11 @@ nav a:active {
     margin: 0;
 }
 
+.gamepage-price-div .gamepage-discount {
+    text-decoration: none;
+    color: #10b302;
+}
+
 .gamepage-txt-pri-btn {
     width: 600px;
     display: flex;
