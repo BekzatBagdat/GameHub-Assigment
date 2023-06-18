@@ -738,13 +738,58 @@ nav a:active {
     margin: 0;
 }
 
+.gamepage-price-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .gamepage-price-div .gamepage-discount {
     text-decoration: none;
     color: #1d7515;
 }
 
+.gamepage-btn a {
+    width: 300;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: 0.01rem;
+    background-color: #1B203D;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.037));
+    margin-left: 25px;
+}
+
+.gamepage-btn a:hover {
+    background-color: #353E73;
+}
+
+.gamepage-btn a:active {
+    background-color: #ffffff;
+    color: #1b203d;
+    font-weight: 700;
+}
+
+.gamepage-pri-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .gamepage-txt-pri-btn {
     width: 600px;
+    margin-left: 10px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
