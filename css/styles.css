@@ -80,46 +80,6 @@ nav a:active {
     flex-shrink: 0;
 }
 
-
-/*Search Bar*/
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #D9D9D9;
-    width: 0 auto;
-    height: 3rem;
-    margin-top: 1.25rem;
-    border: 2px solid #1B203D;
-    border-radius: 10px;
-}
-
-.search-bar input {
-    border: none;
-    outline: none;
-    padding: 0.563rem 1.438rem;
-    background: transparent;
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 2%;
-    line-height: 1.875rem;
-}
-
-::placeholder {
-    color: #1B203D;
-}
-
-.search-bar button {
-    border: none;
-    background: transparent;
-    margin: 0.625rem 0.625rem;
-    cursor: pointer;
-}
-
-#searchStoreLabel {
-    display: none;
-}
-
 .ham-menu {
     color: #1b203d;
     font-size: 3rem;
@@ -167,9 +127,6 @@ nav a:active {
 }
 
 @media (max-width:374px) {
-    .search-bar {
-        display: none;
-    }
     #hamMenu:checked~nav {
         display: flex;
         background-color: #FFFFFF;
