@@ -16,8 +16,9 @@ const getGames = async () => {
         topSellCountainer.style.fontSize = '1rem'
         topSellCountainer.style.color = 'white'
         //Fetching
-        const url = 'https://api.noroff.dev/api/v1/gamehub'
-        const response = await fetch(url)
+        const url = 'http://gamehub-products.local'
+        const endPoint = '/wp-json/wc/store/products/'
+        const response = await fetch(url+endPoint)
         const json = await response.json()
         const gamesData = json
         //Running createHtml functions
@@ -36,7 +37,7 @@ getGames()
 const htmlNewReleases = games => {
     //Removing loader indicator
     listOfGamesContainer.textContent = ''
-
+    
     games.forEach(game => {
         //div
         const div = document.createElement('div')
@@ -44,12 +45,12 @@ const htmlNewReleases = games => {
         //img
         const img = document.createElement('img')
         img.className = "newreleases-product-img"
-        img.src = game.image
+        img.src = game.images[0].src
         div.append(img)
         //h2
         const h2 = document.createElement('h2')
         h2.className = "newreleases-product-title"
-        h2.textContent = game.title
+        h2.textContent = game.name
         div.append(h2)
         //p for Platform
         const pPlatform = document.createElement('p')
@@ -59,7 +60,7 @@ const htmlNewReleases = games => {
         //p for Price
         const pPrice = document.createElement('p')
         pPrice.className = "newreleases-product-price"
-        pPrice.textContent = `${game.price} $`
+        pPrice.textContent = `${game.prices.price / 100} Kr`
         div.append(pPrice)
         //a
         const a = document.createElement('a')
@@ -82,12 +83,12 @@ const htmlDiscount = games => {
     //img
     const img = document.createElement('img')
     img.className = "discounts-product-img"
-    img.src = games[3].image
+    img.src = games[2].images[0].src
     div.append(img)
     //h3
     const h3 = document.createElement('h3')
     h3.className = "discounts-product-title"
-    h3.textContent = games[3].title
+    h3.textContent = games[2].name
     div.append(h3)
     //p for Platform
     const pPlatform = document.createElement('p')
@@ -97,19 +98,19 @@ const htmlDiscount = games => {
     //p for Price
     const pPrice = document.createElement('p')
     pPrice.className = "discounts-product-oldprice"
-    pPrice.textContent = `${games[3].price} $`
+    pPrice.textContent = `${games[2].prices.regular_price / 100} Kr`
     div.append(pPrice)
     //p for Discounted Price
     const pPriceDiscount = document.createElement('p')
     pPriceDiscount.className = "discounts-product-price"
-    pPriceDiscount.textContent = `${games[3].discountedPrice} $`
+    pPriceDiscount.textContent = `${games[2].prices.sale_price / 100} kr`
     div.append(pPriceDiscount)
     //a
     const a = document.createElement('a')
     a.className = "discounts-btn"
     a.textContent = "Buy Now"
     div.append(a)
-    a.href = `gamepage.html?id=${games[3].id}`
+    a.href = `gamepage.html?id=${games[2].id}`
     //Appending new elements to the discount container
     discountContainer.append(div)
 }
@@ -118,7 +119,6 @@ const htmlDiscount = games => {
 const htmlTopSell = games => {
     //Removing loader indicator
     topSellCountainer.textContent = '';
-
     for (let i = 1; i <= 5; i++) {
         //div
         const div = document.createElement('div')
@@ -129,7 +129,7 @@ const htmlTopSell = games => {
         div.append(h3)
         //h4
         const h4 = document.createElement('h4')
-        h4.textContent = games[i].title
+        h4.textContent = games[i].name
         div.append(h4)
         //a 
         const a = document.createElement('a')

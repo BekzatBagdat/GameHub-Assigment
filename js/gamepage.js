@@ -13,7 +13,7 @@ const getGames = async () => {
         const queryString = document.location.search;
         const params = new URLSearchParams(queryString)
         const id = params.get("id")
-        const url = 'https://api.noroff.dev/api/v1/gamehub/' + id
+        const url = 'http://gamehub-products.local/wp-json/wc/store/products/' + id
         //fetching
         const response = await fetch(url)
         const json = await response.json()
@@ -34,17 +34,18 @@ const htmlGamepage = game => {
     //Removing loader indication
     gamepageContainer.innerHTML = ""
     //html elements
+    console.log(game)
     const html = `
-            <img src="${game.image}" alt="${game.title}">
+            <img src="${game.images[0].src}" alt="${game.name}">
                 <div class="gamepage-txt-pri-btn">
                     <div class="gamepage-text">
-                        <h1>${game.title}</h1>
-                        <p>${game.description}</p>
+                        <h1>${game.name}</h1>
+                        ${game.short_description}
                     </div>
                     <div class="gamepage-pri-btn">
                         <div class="gamepage-price-div">
-                            <h2>${game.price} $</h2>
-                            <h2 class="gamepage-discount">${game.discountedPrice} $</h2>
+                            <h2>${game.prices.regular_price / 100} Kr</h2>
+                            <h2 class="gamepage-discount">${game.prices.sale_price / 100} Kr</h2>
                         </div>
                         <div class="gamepage-btn">
                             <a href="cart.html?id=${game.id}">Add to cart</a>
@@ -52,7 +53,7 @@ const htmlGamepage = game => {
                     </div>`
     gamepageContainer.innerHTML = html
     //Changing the Elements if no discount for the game 
-    if (game.price === game.discountedPrice) {
+    if (game.prices.regular_price === game.prices.sale_price) {
         const h2NoDiscount = document.querySelector('.gamepage-price-div > h2')
         h2NoDiscount.style.textDecoration = "none"
         const h2Discount = document.querySelector('.gamepage-discount')
@@ -69,17 +70,17 @@ const htmlInfoPage = game => {
     
     <div class="gamepage-info">
             <h3>Genre:</h3>
-            <p>${game.genre}</p>
+            <p>${game.attributes[0].terms[0].name}</p>
     </div>
 
     <div class="gamepage-info">
             <h3>Age Rating:</h3>
-            <p>${game.ageRating}</p>
+            <p>${game.attributes[1].terms[0].name}</p>
     </div>
 
     <div class="gamepage-info">
                 <h3>Release Date:</h3>
-                <p>${game.released}</p>
+                <p>${game.attributes[2].terms[0].name}</p>
     </div>`
     infoContainer.innerHTML = html
 }
