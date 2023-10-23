@@ -13,7 +13,9 @@ const getGames = async () => {
         const queryString = document.location.search;
         const params = new URLSearchParams(queryString)
         const id = params.get("id")
-        const url = 'http://gamehub-products.local/wp-json/wc/store/products/' + id
+        const adr = 'http://gamehub-products.local'
+        const endPoint = '/wp-json/wc/store/products/'
+        const url = adr + endPoint + id
         //fetching
         const response = await fetch(url)
         const json = await response.json()
