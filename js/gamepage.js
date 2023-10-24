@@ -13,11 +13,10 @@ const getGames = async () => {
         const queryString = document.location.search;
         const params = new URLSearchParams(queryString)
         const id = params.get("id")
-        const adr = 'http://bekzatbagdat.no'
-        const endPoint = '/wp-json/wc/store/products/'
-        const url = adr + endPoint + id
+        const url = 'http://bekzatbagdat.no/wp-json/wc/store/products/'
+        const urlId = url + id
         //fetching
-        const response = await fetch(url)
+        const response = await fetch(urlId)
         const json = await response.json()
         const gameData = json
         //Running createHtml functions
