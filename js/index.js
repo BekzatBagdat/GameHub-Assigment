@@ -16,7 +16,7 @@ const getGames = async () => {
         topSellCountainer.style.fontSize = '1rem'
         topSellCountainer.style.color = 'white'
         //Fetching
-        const url = 'http://gamehub-products.local'
+        const url = 'http://bekzatbagdat.no'
         const endPoint = '/wp-json/wc/store/products/'
         const response = await fetch(url+endPoint)
         const json = await response.json()
