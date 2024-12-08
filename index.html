@@ -1,109 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gamehub | Homepage. The Universe of Games. Gamehub is an online shop where users can purchase computer games.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gamehub | Homepage. The Universe of Games. Gamehub is an online shop where users can purchase computer games."
+    />
     <title>Gamehub | Home</title>
     <!--Quicksand font link-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
     <!--Font Awesome Icon link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Hotjar Tracking Code for https://gamehub-bekzatbagdat.netlify.app/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    !-- Hotjar Tracking Code for Gamehub -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3660950,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
-</head>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5234413, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
-        <!--Hamburger menu-->
-        <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
-            <i class="fa fa-bars"></i>
-        </label>
-        <nav>
-            <!--Navigation Bar-->
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="#">
-                <img class="icons" src="icons/favorite_icon.svg" alt="favorite icon">
-            </a>
-            <a href="cart.html">
-                <img class="icons" src="icons/cart_icon.svg" alt="cart icon">
-            </a>
-        </nav>
+      <!--Logo-->
+      <img
+        class="logo"
+        src="./images/GameHub_Logo.png"
+        alt="gamehub logo. The Universe of games"
+      />
+      <!--Hamburger menu-->
+      <input type="checkbox" id="hamMenu" />
+      <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
+        <i class="fa fa-bars"></i>
+      </label>
+      <nav>
+        <!--Navigation Bar-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">
+          <img
+            class="icons"
+            src="icons/favorite_icon.svg"
+            alt="favorite icon"
+          />
+        </a>
+        <a href="cart.html">
+          <img class="icons" src="icons/cart_icon.svg" alt="cart icon" />
+        </a>
+      </nav>
     </header>
 
     <main>
-        <!--New Releases Section-->
-        <section class="newreleases-section">
-            <div class="new.releases-title-div">
-                <h1 class="newreleases-title">New Releases</h1>
-            </div>
-
-            <div class="scroll-horizontal">
-                <!--New Releases List of Games-->
-                <div class="newreleases-listofgames"></div>
-            </div>
-        </section>
-        <!--Discount and Top Selling Section-->
-        <div class="container">
-            <!--Discounts-->
-            <section class="dis-top-section">
-
-                <h2 class="discounts-title">Discounts
-                    <img class="home-emojis" src="icons/fire_emoji.svg" alt="fire emoji">
-                </h2>
-                <!--Discounts List of Games-->
-                <div class="blackbox">
-                    <div class="discounts-redbox"></div>
-                </div>
-
-            </section>
-            <!--Top Selling-->
-            <section class="dis-top-section">
-
-                <h2 class="topselling-title">Top Selling
-                    <img class="home-emojis" src="icons/chart_emoji.svg" alt="chart emoji">
-                </h2>
-                <!--Top Selling List of Games-->
-                <div class="blackbox">
-
-                    <!--List of games 1 to 5 (top 5)-->
-                    <div class="topselling-bluebox"></div>
-                </div>
-            </section>
+      <!--New Releases Section-->
+      <section class="newreleases-section">
+        <div class="new.releases-title-div">
+          <h1 class="newreleases-title">New Releases</h1>
         </div>
+
+        <div class="scroll-horizontal">
+          <!--New Releases List of Games-->
+          <div class="newreleases-listofgames"></div>
+        </div>
+      </section>
+      <!--Discount and Top Selling Section-->
+      <div class="container">
+        <!--Discounts-->
+        <section class="dis-top-section">
+          <h2 class="discounts-title">
+            Discounts
+            <img
+              class="home-emojis"
+              src="icons/fire_emoji.svg"
+              alt="fire emoji"
+            />
+          </h2>
+          <!--Discounts List of Games-->
+          <div class="blackbox">
+            <div class="discounts-redbox"></div>
+          </div>
+        </section>
+        <!--Top Selling-->
+        <section class="dis-top-section">
+          <h2 class="topselling-title">
+            Top Selling
+            <img
+              class="home-emojis"
+              src="icons/chart_emoji.svg"
+              alt="chart emoji"
+            />
+          </h2>
+          <!--Top Selling List of Games-->
+          <div class="blackbox">
+            <!--List of games 1 to 5 (top 5)-->
+            <div class="topselling-bluebox"></div>
+          </div>
+        </section>
+      </div>
     </main>
     <!--Footer with copyright and social media information-->
     <footer>
-        <div class="footer-content">
-            <p class="copyright-p">Copyright &#169; 2023 Gamehub</p>
-            <div class="socialmedia-icons">
-                <img src="icons/facebook_icon.svg" alt="facebook icon">
-                <img src="icons/instagram_icon.svg" alt="instagram icon">
-                <img src="icons/twitter_icon.svg" alt="twitter icon">
-                <img src="icons/youtube_icon.svg" alt="youtube icon">
-            </div>
+      <div class="footer-content">
+        <p class="copyright-p">Copyright &#169; 2023 Gamehub</p>
+        <div class="socialmedia-icons">
+          <img src="icons/facebook_icon.svg" alt="facebook icon" />
+          <img src="icons/instagram_icon.svg" alt="instagram icon" />
+          <img src="icons/twitter_icon.svg" alt="twitter icon" />
+          <img src="icons/youtube_icon.svg" alt="youtube icon" />
         </div>
+      </div>
     </footer>
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>

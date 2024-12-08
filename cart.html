@@ -1,163 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gamehub | Cart. Products in The Cart, Total Price">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gamehub | Cart. Products in The Cart, Total Price"
+    />
     <title>Gamehub | Cart</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!--Quicksand font link-->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700"
+      rel="stylesheet"
+    />
     <!--Font Awesome Icon link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Hotjar Tracking Code for https://gamehub-bekzatbagdat.netlify.app/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    !-- Hotjar Tracking Code for Gamehub -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:3660950,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
-</head>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 5234413, hjsv: 6 };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+  </head>
 
-<body class="cart-body">
+  <body class="cart-body">
     <header>
-        <!--Logo-->
-        <img class="logo" src="./images/GameHub_Logo.png" alt="gamehub logo. The Universe of games">
-        <!--Hamburger menu-->
-        <input type="checkbox" id="hamMenu">
-        <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
-            <i class="fa fa-bars"></i>
-        </label>
-        <nav>
-            <!--Navigation Bar-->
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="#">
-                <img class="icons" src="icons/favorite_icon.svg" alt="favorite icon">
-            </a>
-            <a href="cart.html">
-                <img class="icons" src="icons/cart_icon.svg" alt="cart icon">
-            </a>
-        </nav>
+      <!--Logo-->
+      <img
+        class="logo"
+        src="./images/GameHub_Logo.png"
+        alt="gamehub logo. The Universe of games"
+      />
+      <!--Hamburger menu-->
+      <input type="checkbox" id="hamMenu" />
+      <label for="hamMenu" class="ham-menu" aria-label="hamMenu">
+        <i class="fa fa-bars"></i>
+      </label>
+      <nav>
+        <!--Navigation Bar-->
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">
+          <img
+            class="icons"
+            src="icons/favorite_icon.svg"
+            alt="favorite icon"
+          />
+        </a>
+        <a href="cart.html">
+          <img class="icons" src="icons/cart_icon.svg" alt="cart icon" />
+        </a>
+      </nav>
     </header>
     <main>
-        <div class="cart-sidebyside">
-            <section class="cart-products-section">
+      <div class="cart-sidebyside">
+        <section class="cart-products-section">
+          <h1>Products:</h1>
 
-                <h1>Products:</h1>
+          <div class="cart-wrapper">
+            <div class="cart-products">
+              <img src="images/GameHub_covers3.jpg" alt="Black" />
+              <h2>Black</h2>
 
-                <div class="cart-wrapper">
-                    <div class="cart-products">
-                        <img src="images/GameHub_covers3.jpg" alt="Black">
-                        <h2>Black</h2>
+              <div class="cart-select-remove">
+                <label for="numProducts">Select Quantity</label>
+                <select name="cart-num-products" id="numProducts">
+                  <option value="cart-num-products">1</option>
+                  <option value="cart-num-products">2</option>
+                  <option value="cart-num-products">3</option>
+                  <option value="cart-num-products">4</option>
+                  <option value="cart-num-products">5</option>
+                  <option value="cart-num-products">6</option>
+                  <option value="cart-num-products">7</option>
+                  <option value="cart-num-products">8</option>
+                  <option value="cart-num-products">9</option>
+                  <option value="cart-num-products">10</option>
+                </select>
+                <img src="icons/remove_btn.svg" alt="remove button" />
+              </div>
+              <p>NOK 679</p>
+            </div>
+          </div>
 
-                        <div class="cart-select-remove">
-                            <label for="numProducts">Select Quantity</label>
-                            <select name="cart-num-products" id="numProducts">
-                        <option value="cart-num-products">1</option>
-                        <option value="cart-num-products">2</option>
-                        <option value="cart-num-products">3</option>
-                        <option value="cart-num-products">4</option>
-                        <option value="cart-num-products">5</option>
-                        <option value="cart-num-products">6</option>
-                        <option value="cart-num-products">7</option>
-                        <option value="cart-num-products">8</option>
-                        <option value="cart-num-products">9</option>
-                        <option value="cart-num-products">10</option>
-                    </select>
-                            <img src="icons/remove_btn.svg" alt="remove button">
-                        </div>
-                        <p>NOK 679</p>
-                    </div>
-                </div>
+          <div class="cart-wrapper">
+            <div class="cart-products">
+              <img src="images/GameHub_covers10.jpg" alt="Forge Legend" />
+              <h2>Forge Legend</h2>
 
-                <div class="cart-wrapper">
-                    <div class="cart-products">
-                        <img src="images/GameHub_covers10.jpg" alt="Forge Legend">
-                        <h2>Forge Legend</h2>
+              <div class="cart-select-remove">
+                <label for="numProducts2">Select Quantity</label>
+                <select name="cart-num-products" id="numProducts2">
+                  <option value="cart-num-products">1</option>
+                  <option value="cart-num-products">2</option>
+                  <option value="cart-num-products">3</option>
+                  <option value="cart-num-products">4</option>
+                  <option value="cart-num-products">5</option>
+                  <option value="cart-num-products">6</option>
+                  <option value="cart-num-products">7</option>
+                  <option value="cart-num-products">8</option>
+                  <option value="cart-num-products">9</option>
+                  <option value="cart-num-products">10</option>
+                </select>
+                <img src="icons/remove_btn.svg" alt="remove btn" />
+              </div>
+              <p class="cart-discount-price">
+                NOK 485
+                <span>
+                  <img src="icons/discount_tag.svg" alt="discount tag" />
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="cart-total-section">
+          <h1>Total:</h1>
 
+          <div class="cart-total-div">
+            <!--Black-->
+            <h2 class="cart-total-num">1x</h2>
+            <h2>Black</h2>
+            <h2>679,-</h2>
+          </div>
+          <div class="cart-total-div">
+            <!--Forge Legend-->
+            <h2 class="cart-total-num">1x</h2>
+            <h2>Forge Legend</h2>
+            <h2>485,-</h2>
+          </div>
+          <div class="cart-total-discount-div">
+            <!--Discount-->
+            <h3>Forge Legend:</h3>
+            <p class="cart-total-discount-p">699,-</p>
+            <p>485,-</p>
+          </div>
+          <div class="cart-total-sum-div">
+            <!--Total-->
+            <p>1168,-</p>
+          </div>
 
-                        <div class="cart-select-remove">
-                            <label for="numProducts2">Select Quantity</label>
-                            <select name="cart-num-products" id="numProducts2">
-                        <option value="cart-num-products">1</option>
-                        <option value="cart-num-products">2</option>
-                        <option value="cart-num-products">3</option>
-                        <option value="cart-num-products">4</option>
-                        <option value="cart-num-products">5</option>
-                        <option value="cart-num-products">6</option>
-                        <option value="cart-num-products">7</option>
-                        <option value="cart-num-products">8</option>
-                        <option value="cart-num-products">9</option>
-                        <option value="cart-num-products">10</option>
-                    </select>
-                            <img src="icons/remove_btn.svg" alt="remove btn">
-                        </div>
-                        <p class="cart-discount-price">
-                            NOK 485
-                            <span>
-                            <img src="icons/discount_tag.svg" alt="discount tag">
-                        </span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="cart-total-section">
-
-                <h1>Total:</h1>
-
-                <div class="cart-total-div">
-                    <!--Black-->
-                    <h2 class="cart-total-num">1x</h2>
-                    <h2>Black</h2>
-                    <h2>679,-</h2>
-                </div>
-                <div class="cart-total-div">
-                    <!--Forge Legend-->
-                    <h2 class="cart-total-num">1x</h2>
-                    <h2>Forge Legend</h2>
-                    <h2>485,-</h2>
-                </div>
-                <div class="cart-total-discount-div">
-                    <!--Discount-->
-                    <h3>Forge Legend:</h3>
-                    <p class="cart-total-discount-p">699,-</p>
-                    <p>485,-</p>
-                </div>
-                <div class="cart-total-sum-div">
-                    <!--Total-->
-                    <p>1168,-</p>
-                </div>
-
-                <div class="cart-btn-div">
-                    <!--Checkout btn-->
-                    <a href="checkout.html">Check out</a>
-                </div>
-            </section>
-        </div>
+          <div class="cart-btn-div">
+            <!--Checkout btn-->
+            <a href="checkout.html">Check out</a>
+          </div>
+        </section>
+      </div>
     </main>
     <!--Footer with copyright and social media information-->
     <footer>
-        <div class="footer-content">
-            <p class="copyright-p">Copyright &#169; 2023 Gamehub</p>
-            <div class="socialmedia-icons">
-                <img src="icons/facebook_icon.svg" alt="facebook icon">
-                <img src="icons/instagram_icon.svg" alt="instagram icon">
-                <img src="icons/twitter_icon.svg" alt="twitter icon">
-                <img src="icons/youtube_icon.svg" alt="youtube icon">
-            </div>
+      <div class="footer-content">
+        <p class="copyright-p">Copyright &#169; 2023 Gamehub</p>
+        <div class="socialmedia-icons">
+          <img src="icons/facebook_icon.svg" alt="facebook icon" />
+          <img src="icons/instagram_icon.svg" alt="instagram icon" />
+          <img src="icons/twitter_icon.svg" alt="twitter icon" />
+          <img src="icons/youtube_icon.svg" alt="youtube icon" />
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
