@@ -3,6 +3,9 @@ const body = document.querySelector('body');
 const listOfGamesContainer = document.querySelector('.newreleases-listofgames');
 const discountContainer = document.querySelector('.discounts-redbox');
 const topSellCountainer = document.querySelector('.topselling-bluebox');
+const scrollLeftBtn = document.querySelector('.scroll-left');
+const scrollRightBtn = document.querySelector('.scroll-right');
+const scrollHorizontal = document.querySelector('.scroll-horizontal');
 //Fetch
 const getGames = async () => {
   try {
@@ -141,3 +144,13 @@ const htmlTopSell = (games) => {
     topSellCountainer.append(div);
   }
 };
+
+// Scroll left
+scrollLeftBtn.addEventListener('click', () => {
+  scrollHorizontal.scrollBy({ left: -200, behavior: 'smooth' });
+});
+
+// Scroll right
+scrollRightBtn.addEventListener('click', () => {
+  scrollHorizontal.scrollBy({ left: 100, behavior: 'smooth' });
+});
